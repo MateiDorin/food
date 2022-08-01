@@ -1,4 +1,5 @@
 import './MealItem.css';
+import MealItemForm from './MealItemForm';
 
 const MealItem = (props) => {
     const price = `$${props.price.toFixed(2)}`;
@@ -11,7 +12,7 @@ const MealItem = (props) => {
         <div className='price'>{price}</div>
       </div>
       <div>
-        <p>Here will be the item form to add the quantity and to add to cart.</p>
+        <MealItemForm />
       </div>
     </li>
   );
