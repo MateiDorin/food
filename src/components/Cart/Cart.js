@@ -1,9 +1,10 @@
 import './Cart.css';
+import Modal from '../UI/Modal';
 
 const Cart = props => {
     const cartItems = <ul className='cart-items'>{[{id: 'c1', name: 'Sushi', amount: 2, price: 12.99 }].map(item => <li>{item.name}</li>)}</ul>
 
-    return <div>
+    return <Modal>
         {cartItems}
         <div className='total'>
             <span>Total Amount</span>
@@ -14,7 +15,7 @@ const Cart = props => {
             <button className='button'>Order</button>
 
         </div>
-    </div>
+    </Modal>
 };
 
 export default Cart;
